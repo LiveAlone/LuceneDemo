@@ -1,4 +1,4 @@
-package org.yqj.boot.demo;
+package org.yqj.lucene.demo;
 
 /**
  * Created by yaoqijun.
