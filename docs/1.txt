@@ -1,0 +1,15 @@
+It should not be confused with the popular ROMs Tesla, Tipsy, and Validus because it contains none of the features that make those ROMs unique. Accordingly, when you build from this repository, the team requests that you do not brand your ROM as an unofficial Tesla, Tipsy, or Validus build until they’ve released the first official version for public consumption.
+
+This repository includes the following:
+
+Basic features expected of all custom ROMs (such as advanced reboot menu, night mode, and Quick Settings brightness slider control)
+Bug fixes that Google won’t be pushing out until the next monthly security patch or even the next Android maintenance update
+AOSP features that Google deactivates by default such as System UI Tuner
+Other Android Oreo-specific additions listed here  or on the repository’s home page  here
+As mentioned previously, GZOSP does not include the set of custom features we’ve come to expect from the popular Ground Zero ROMs Tesla, Tipsy, and Validus. For example, you won’t see any built-in dark system themes, the Wolves Den custom settings section, or Validus wallpapers. The reason for this is simple: the team’s goal is to provide a base for any and all developers to build their own custom ROMs without being limited to the three Ground Zero ROM brands that the project is best known for.
+
+If you build straight from the GZOSP repository, you’ll get a stockAndroid 8.0 Oreo build with the additions listed previously, but with none of the features specific to existing custom ROMs. It’s an alternative to building fromLineageOS 15.0 as a base or from Slim or Paranoid Android in which you have all of their custom features included by default. Meanwhile, you have any CAF code you need available to run the non-Nexus devices listed here (more will be added in time) and you’re not being limited to what Google has merged in AOSP.
+
+There have, of course, been other attempts to build a central repository designed for custom ROM development, but in the case of GZOSP, the team has assured us that they will keep it updated because it’s the starting point from which they will create their Validus repository (until further notice, Validus will be the only Ground Zero ROM being developed for Android Oreo). If you have any further questions about GZOSP, you can post them in the team’s Google+ community or in theXDA forums.
+
+Thanks to the GZOSP team for reaching out to us on their new project. If you are a developer and would like to share an interesting project you or other members have been working on, please reach out to uson our contact form.

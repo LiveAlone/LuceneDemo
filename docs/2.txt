@@ -1,0 +1,9 @@
+In a day full of Echo announcements, theEcho Button was a clear standout. Not because it was a better or more useful product than the rest, but because it’s just damn weird. Where most of what the company announced today was some iteration on an existing product line (be it the Echo or Fire TV), the Button is a strange, left field offering with a limited case use.
+
+More than any existing Echo, the product resembles a Milton Bradley product from the 80s — sort of a scaled down version of Simon. How did such a bizarre product get added to the company’s road map? The way SVP of Devices David Limp tells it, the product was an accident.
+
+The Button started off as an in-house reference design. “We first did the buttons as a reference device internally to prove out gadgets,” says Limp. “There’s a lot of product complexity in that. It uses Bluetooth to connect to the device and you have to do that while Wifi is still working. We wanted to prove out the lighting API so we put some lights in some buttons. These were a bunch of engineers wire wrapping the things together.”
+
+Eight or nine months ago, the company was playing around with the device, demonstrating its trivia abilities and ultimately decided to productize it. It’s a contrast from the rest of Echo offerings, which Amazon says are direct responses to customer suggestions, adding a screen or better speakers. Useful additions people actually want.
+
+According to Limp, the Amazon offices filled with products that didn’t make the cut. In spite of what it may seem from the outside, Amazon actually does reject Echo suggestions. In fact, the original Echo apparently sat in development limbo for a number of years because the company just couldn’t get the product right.

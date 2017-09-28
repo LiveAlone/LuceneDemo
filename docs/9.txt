@@ -1,0 +1,5 @@
+It contains a single entitlement, the one that’s causing our grief. I deleted the entitlement from the list, saved the file, and relaunched Xcode. After doing so, everything is “back to normal.”
+
+I can’t strongly encourage you to hack your copy of Xcode because I don’t know what the consequences might be. “It seems fine,” but you’re on your own if you decide to do this.
+
+This small change in Xcode 9 causes a lot of unexpected grief for folks who don’t use Xcode archives. I am curious to know how widespread the problem is, and enthusiastic to get the word out about it so that affected folks can work around the problem, or at least be aware of it. Myself, I’ll probably end up adopting the workaround of using Xcode archives, but I’m hopeful that Apple will see the merit of providing an option in an update to Xcode 9 that supports disabling the addition of this entitlement without archiving and exporting a built product.

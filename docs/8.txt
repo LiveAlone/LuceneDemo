@@ -1,0 +1,15 @@
+I wrote on Monday aboutissues with Xcode 9 relating to code signing. Although the gist of that post involved sandboxed Mac applications that launch sandboxed child processes, the fundamental issue is a bit broader: Xcode 9 adds a “com.apple.security.get-task-allow” entitlement to any binary it signs. For the majority of developers, this is probably not an issue, because the entitlement is removed when an Xcode archive is exported for distribution. Most developers, and particularly iOS developers, use Xcode archives.
+
+For folks who don’t, side effects of this additional entitlement include, but may not be limited to:
+
+Inability to launch sandboxed child processes.
+Rejection from the Mac App Store.
+Unknown consequences of shipping with an unintended entitlement.
+So, if you’re a developer who doesn’t use archives, what are your options? I’ve come up with four workarounds, and I present them here, roughly sorted by advisability and level of tedium:
+
+Use Xcode 8.The simplest solution is to not upgrade to Xcode 9 unless and until you need to. Xcode 8’s signing process does not impose the unintended entitlement, so there is no risk of shipping a product that has it, unless you add it yourself. The downside to sticking with Xcode 8 is you won’t enjoy any of the new features of Xcode 9, you’ll have to work to support either Swift 4, macOS 10.13, or iOS 11 SDK features in your app.
+
+Manually re-sign the built-product. Code signing is code signing, and you’re free to sign anything you like to suit your needs, using the “codesign” command line tool. It frankly sounds like a pain in the neck to recursively re-sign every binary in the app bundle, ensuring that the suitable entitlements (minus the unwanted one) are preserved, but I’m sure it can be done.
+Use Xcode archives.It strikes me as a little obnoxious to have to use Xcode archives when they don’t offer any added benefits for my dibstrution workflow. But as a long term solution, this is probably the safest bet. The new behavior in Xcode 9 strongly suggests that Apple expects most developers to use archives, and joining the crowd is usually a good idea when it comes to avoiding trouble with Apple’s developer tools.
+
+If you are using Xcode archives for the first time, particularly with a complex project, you might discover that the resulting archives are not suitable for exporting a signed application. If you get a “Generic Xcode Archive” after running Build -> Archive, you know you’ve got a problem. By default the archive process builds all targets with
